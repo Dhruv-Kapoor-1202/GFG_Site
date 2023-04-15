@@ -1,0 +1,35 @@
+.resource {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.resource__text {
+    font-size: var(--size-3xl);
+    font-weight: 400;
+}
+
+strong {
+    font-weight: 400;
+    color: var(--clr-yellow);
+}
+
+
+
+@media (min-width: 500px) {
+    
+}
+@media (min-width: 950px) {
+    .resource__text {
+        font-size: var(--size-5xl);
+    }
+    
+}
+@media (min-width: 1500px) {
+    .resource__text {
+        font-size: var(--size-6xl);
+        width: 33ch;
+    }
+    
+}
