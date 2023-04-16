@@ -20,11 +20,12 @@
 .hero__heading {
     font-weight: 400;
     font-size: var(--size-4xl);
-    width: 18ch;
+    /* width: calc(15em + 0.5rem); */
+    /* width: 18ch; */
 }
 
 .hero__para {
-    width: 55ch;
+    /* width: 55ch; */
     font-size: var(--size-xs);
     font-weight: 350;
 }
@@ -44,16 +45,24 @@
 }
 
 img {
-    width: 25em;
-    height: 20em;
+    width: auto;
+    height: auto;
+}
+
+.pic1 {
+    width: 90%;
+    height: 90%;
 }
 
 
 
 
-
-
 @media (min-width: 500px) {
+    .pic1 {
+        width: calc(25em + 1rem);
+        height: auto;
+    }
+    
     
 }
 @media (min-width: 950px) {
@@ -84,8 +93,9 @@ img {
     .hero__btn {
         font-size: var(--size-sm);
     }
-    img {
+    .pic1 {
         width: 28em;
+        height: auto;
     }
         
 }
@@ -105,7 +115,7 @@ img {
         font-size: var(--size-base);
     }
 
-    img {
+    .pic1 {
         width: 40em;
         height: 30em;
     }
